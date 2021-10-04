@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <title>Amazon2.O</title>
-  </head>
-  <body>
-    <div class="w-full bg-white">
 
-      <!-- Header starting  -->
-      
-      <div class="header h-16 bg-gray-900 flex place-items-center" >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Amazon-Rebuilt</title>
+</head>
 
-        <!-- Amazon2.O Logo -->
+<body class="bg-gray-300">
 
-        <div class="logo w-1/5 h-16 ml-10 " >
-          <img
-            class="h-16 w-28 object-contain"
-            src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
-            alt="Amazon2.O Logo"
-          />
-        </div>
+  <div class="w-full">
 
-        <!-- placeholder -->
+    <!-- Header starting  -->
 
-        <input id="search" class = "h-9 w-30 bg-gray-800 border-2 border-gray-500 focus:border-white-500 rounded-l-3xl px-3 text-white ml-6 focus:outline-none"type= "text" placeholder="  Search.." >
-      
+    <div class="header h-13 bg-gray-900 flex flex-wrap place-items-center">
 
-      <div class="main"></div>
+      <!-- Amazon2.O Logo -->
+
+      <div class="logo w-1/5 h-16 ml-10 ">
+
+        <img class="h-16 w-28 object-contain"
+          src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
+          alt="Amazon2.O Logo" />
+
+      </div>
+
+      <!-- placeholder -->
+
+      <input id="search"
+        class="h-8 w-30 bg-gray-800 border-2 border-gray-500 focus:border-white-500 rounded-3xl px-3 text-white ml-6 focus:outline-none placeholder-white"
+        type="text" placeholder="Search....">
+
+
+      <!-- categories-button -->
+
+      <div class="category bg-gray-800 border-gray-500 border-2 flex rounded-3xl px-3 h-8 items-center text-white">
+        Categories
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+
+      <!-- Search button -->
+
+      <div class="search bg-yellow-400 rounded-3xl">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+
+      <div class="main">
+
+      </div>
+
     </div>
-  </body>
+</body>
+
 </html>
