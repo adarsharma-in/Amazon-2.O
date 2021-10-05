@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
   <title>Amazon-Rebuilt</title>
 </head>
 
@@ -15,7 +16,7 @@
 
     <!-- Header starting  -->
 
-    <div class="header h-13 bg-gray-900 flex flex-wrap place-items-center">
+    <div class="header h-13 bg-gray-900 flex items-center">
 
       <!-- Amazon2.O Logo -->
 
@@ -27,39 +28,77 @@
 
       </div>
 
-      <!-- placeholder -->
+      <!-- Searchbar -->
+      <div class="searchbar flex">
 
-      <input id="search"
-        class="h-8 w-30 bg-gray-800 border-2 border-gray-500 focus:border-white-500 rounded-3xl px-3 text-white ml-6 focus:outline-none placeholder-white"
-        type="text" placeholder="Search....">
+        <!-- placeholder -->
+
+        <input id="search"
+          class="h-8 w-1/2 bg-gray-800 border-2 border-gray-500 focus:border-white-500 rounded-l-2xl px-3 text-white ml-6 focus:outline-none placeholder-white border-opacity-75"
+          type="text" placeholder="Search....">
 
 
-      <!-- categories-button -->
+        <!-- categories-button -->
 
-      <div class="category bg-gray-800 border-gray-500 border-2 flex rounded-3xl px-3 h-8 items-center text-white">
-        Categories
+        <div class="category bg-gray-800 border-gray-500 border-2 flex px-3 h-8 items-center text-white border-opacity-75 
+          ">
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clip-rule="evenodd" />
-        </svg>
+          Categories
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+
+        <!-- Search button -->
+
+        <div
+          class="search bg-yellow-500 w-1/12 rounded-r-2xl h-8 border-opacity-75 justify-center items-center items-center flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+
       </div>
 
-      <!-- Search button -->
 
-      <div class="search bg-yellow-400 rounded-3xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
+      <!-- right-icons -->
+
+      <div class="icons flex place-items-end items-center ml-auto mr-8 justify-around">
+
+        <div class="heart text-white ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+
+        <div class="cart text-white p-1 bg-yellow-500 rounded-lg h-8 ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
+
+        <div class="bell text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+          </svg>
+        </div>
       </div>
+
 
       <div class="main">
 
       </div>
 
     </div>
+  </div>
 </body>
 
 </html>
